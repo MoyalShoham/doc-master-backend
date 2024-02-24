@@ -1,19 +1,38 @@
 ###
 
-GET http://localhost:3000/user
+GET http://localhost:3000/users
 
 
 
 ###
 
-POST http://localhost:3000/user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": "1",
+    "name": "Shoham Moyal",
+    "email": "moyal.shoham@gmail.com",
+    "password": "Shoham123",
+    "age": 25
+}
+
 
 
 ###
 
-PUT http://localhost:3000/user
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+  {
+
+    "age": 26,
+    "password": "Shoham123",
+    "email": "moyal.shoham@gmail.com",
+    "name": "Shoham Moyal"
+  }
 
 
 ###
 
-DELETE http://localhost:3000/user
+DELETE http://localhost:3000/users
