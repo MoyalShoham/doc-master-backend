@@ -1,8 +1,6 @@
 
 *.json
-
+node_modules
 .env
-
 doc-master-backend-firebase-key.json
-
 firebase-config.js
