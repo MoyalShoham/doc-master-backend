@@ -2,6 +2,6 @@
 *.json
 
 
-/doc-master-backend-firebase-key.json
+doc-master-backend-firebase-key.json
 
-/firebase-config.js
+firebase-config.js
