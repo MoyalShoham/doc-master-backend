@@ -1,6 +1,7 @@
 
 *.json
 
+.env
 
 doc-master-backend-firebase-key.json
 
