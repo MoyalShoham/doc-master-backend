@@ -1,4 +1,7 @@
 
+*.json
+
+
 /doc-master-backend-firebase-key.json
 
 /firebase-config.js
