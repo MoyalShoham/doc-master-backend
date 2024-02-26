@@ -15,7 +15,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": "3",
+    "id": "5",
     "name": "Shoham Moyal",
     "email": "moyal.shoham@gmail.com",
     "password": "Shoham123",
@@ -42,3 +42,51 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/users/1
+
+
+
+###
+
+GET http://localhost:3000/posts
+
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "owner": "5",
+    "title": "test",
+    "content": "test",
+    "published": true
+}
+
+
+
+
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "Shoham123"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "Shoham123"
+}
+
+###
+
+GET http://localhost:3000/auth/logout
+
+
