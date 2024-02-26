@@ -3,6 +3,11 @@
 GET http://localhost:3000/users
 
 
+###
+
+GET http://localhost:3000/users/3
+
+
 
 ###
 
@@ -10,7 +15,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": "1",
+    "id": "3",
     "name": "Shoham Moyal",
     "email": "moyal.shoham@gmail.com",
     "password": "Shoham123",
@@ -21,18 +26,19 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/users/1
+PUT http://localhost:3000/users/2
 Content-Type: application/json
 
-  {
+{
+  "id": "1",
+  "age": 26,
+  "password": "Shoham123",
+  "email": "moyal.shoham@gmail.com",
+  "name": "Shoham Moyal"
 
-    "age": 26,
-    "password": "Shoham123",
-    "email": "moyal.shoham@gmail.com",
-    "name": "Shoham Moyal"
-  }
+}
 
 
 ###
 
-DELETE http://localhost:3000/users
+DELETE http://localhost:3000/users/1
