@@ -71,7 +71,7 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "test@gmail.com",
+    "email": "tesst@gmail.com",
     "password": "Shoham123"
 }
 
@@ -81,8 +81,18 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "test@gmail.com",
+    "email": "tesst@gmail.com",
     "password": "Shoham123"
+}
+
+
+###
+
+POST http://localhost:3000/users/post-file
+Content-Type: application/json
+
+{
+    
 }
 
 ###
@@ -90,3 +100,18 @@ Content-Type: application/json
 GET http://localhost:3000/auth/logout
 
 
+
+###
+
+GET http://localhost:3000/users/get-files
+
+
+###
+
+PUT http://localhost:3000/users/update-user-full-name
+Content-Type: application/json
+
+{
+    "id": "RZZi09fpNVP8ibGHCOyvRE80dOj2",
+    "name": "Shoham Moyal"
+}

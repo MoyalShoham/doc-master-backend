@@ -15,6 +15,26 @@ class BaseController {
         this.collectionName = collectionName;
         this.collectionRef = collectionRef;
     }
+
+
+
+
+
+    
+    async getFileById (req: Request, res: Response) {
+        try {
+            const q = query(this.collectionRef, where("id", "==", req.params.id));
+            const querySnapshot = await getDocs(q);
+            if (querySnapshot.empty) {
+                throw new Error("No file found");
+            }
+            const fileData = querySnapshot.docs[0].data();
+            res.status(200).send(fileData);
+        } catch (error) {
+            res.status(404).send(error.message);
+        }
+    }
+
     async get (req: Request, res: Response) {
        
         try {
